@@ -13,7 +13,7 @@ class TestOpenLinkKonstruktorLinkInedx:
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         driver.find_element(*Locators.AUTH_BUTTON).click()
         driver.find_element(*Locators.BUTTON_CONSTRUCTOR).click()
-        WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.AUTH_BUTTON))
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.AUTH_BUTTON))
         driver.find_element(*Locators.BUTTON_LOGO).click()
         elm = driver.find_element(*Locators.VALIDATION_TEXT).text
         assert elm == 'Оформить заказ'

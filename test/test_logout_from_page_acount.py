@@ -13,4 +13,4 @@ class TestLogoutFromMyPageAccount:
         WebDriverWait(driver, 5).until(expected_conditions.element_to_be_clickable(Locators.LOGIN_BUTTON)).click()
         WebDriverWait(driver, 5).until(expected_conditions.element_to_be_clickable(Locators.AUTH_BUTTON)).click()
         WebDriverWait(driver, 5).until(expected_conditions.element_to_be_clickable(Locators.BUTTON_LOGOUT)).click()
-        assert 'https://stellarburgers.nomoreparties.site/account/profile' in driver.current_url
+        assert Locators.LINK_PROFILE in driver.current_url

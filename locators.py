@@ -24,3 +24,15 @@ class Locators:
     BUTTON_CONSTRUCTOR = (By.XPATH, "// p[contains(., 'Конструктор')]")
     BUTTON_LOGO = (By.XPATH, "//a[@class='active']")
 
+    '''Тестирование Табов Конструктора'''
+    TAB_BULKI = (By.CSS_SELECTOR, "#root > div > main > section.BurgerIngredients_ingredients__1N8v2 > div:nth-child(2) > div:nth-child(1) > span")
+    TAB_SOUS = (By.XPATH, "//span[text()='Соусы']")
+    TAB_NACHINKA = (By.XPATH, "//span[text()='Начинки']")
+
+    VALIDATION_NACHINKI = (By.XPATH, "//h2[text()='Начинки']")
+    VALIDATION_SOUS = (By.XPATH, "//h2[text()='Соусы']")
+    VALIDATION_BULKI = (By.XPATH, "//h2[text()='Булки']")
+
+    LINK = 'https://stellarburgers.nomoreparties.site/'
+    LINK_PROFILE = 'https://stellarburgers.nomoreparties.site/account/profile'
+    LINK_LOGIN = '/login'

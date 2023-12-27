@@ -13,4 +13,4 @@ class TestAuthButtonRecoveryPassword:
         driver.find_element(*Locators.INPUT_EMAIL).send_keys(Constants.TEST_EMAIL)
         driver.find_element(*Locators.STATIC_PASSWORD).send_keys(Constants.PASSWORD)
         WebDriverWait(driver, 5).until(expected_conditions.element_to_be_clickable(Locators.LOGIN_BUTTON)).click()
-        assert 'https://stellarburgers.nomoreparties.site/' in driver.current_url
+        assert Locators.LINK in driver.current_url
