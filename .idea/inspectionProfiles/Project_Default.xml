@@ -8,5 +8,8 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="YAMLSchemaValidation" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCaseInsensitiveEnum" value="true" />
+    </inspection_tool>
   </profile>
 </component>
