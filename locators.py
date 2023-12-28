@@ -29,9 +29,14 @@ class Locators:
     TAB_SOUS = (By.XPATH, "//span[text()='Соусы']")
     TAB_NACHINKA = (By.XPATH, "//span[text()='Начинки']")
 
-    VALIDATION_NACHINKI = (By.XPATH, "//h2[text()='Начинки']")
-    VALIDATION_SOUS = (By.XPATH, "//h2[text()='Соусы']")
-    VALIDATION_BULKI = (By.XPATH, "//h2[text()='Булки']")
+    HEADER_TEXT_VALIDATION = (By.XPATH, ".//h1[text()='Соберите бургер']")
+    TAB_NACHINKI_CLICK = (By.XPATH, ".//span[@class='text text_type_main-default' and text()='Начинки']")
+    HEADERS_TEXT_NACHINKI = (By.XPATH, "//h2[text()='Булки']")
+    TAB_SOUS_CLICK = (By.XPATH, ".//span[@class='text text_type_main-default' and text()='Соусы']")
+    HEADERS_TEXT_SOUS = (By.XPATH, "//h2[text()='Соусы']")
+    TAB_BULKI_CLICK = (By.XPATH, ".//span[@class='text text_type_main-default' and text()='Булки']")
+    VALIDATION_BULKI2 = (By.CLASS_NAME, "ab_tab_type_current__2BEPc")
+    HEADERS_TEXT_BULKI = (By.XPATH, "//h2[text()='Булки']")
 
     LINK = 'https://stellarburgers.nomoreparties.site/'
     LINK_PROFILE = 'https://stellarburgers.nomoreparties.site/account/profile'
