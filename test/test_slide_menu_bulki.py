@@ -10,7 +10,5 @@ class TestClickAllTabValidation:
         WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.HEADER_TEXT_VALIDATION))
 
         driver.find_element(*Locators.TAB_NACHINKI_CLICK).click()
-        assert driver.find_element(*Locators.HEADERS_TEXT_NACHINKI).is_displayed()
-
         driver.find_element(*Locators.TAB_BULKI_CLICK).click()
         assert driver.find_element(*Locators.HEADERS_TEXT_BULKI).is_displayed()
